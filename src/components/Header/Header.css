@@ -1,0 +1,68 @@
+.header {
+    width: 99vw;
+    height: 150px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 1px 1px 8px 6px rgba(34, 60, 80, 0.26);
+    -moz-box-shadow: 1px 1px 8px 6px rgba(34, 60, 80, 0.26);
+    box-shadow: 1px 1px 8px 6px rgba(34, 60, 80, 0.26);
+    border-radius: 20px;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    list-style-type: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 40px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    color: coral;
+    filter: drop-shadow(0 4px 8px rgba(255, 127, 80, 0.4));
+    text-shadow: 0 4px 8px rgba(255, 127, 80, 0.4);
+}
+
+.basketButton,
+.account {
+    display: flex;
+    align-items: center;
+    background: coral;
+    transition: all 0.3s ease;
+}
+
+.basketButton img,
+.account img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.basketButton:hover,
+.account:hover {
+    filter: drop-shadow(0 4px 8px rgba(255, 127, 80, 0.7));
+}
