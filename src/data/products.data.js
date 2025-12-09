@@ -1,0 +1,72 @@
+export const products = [
+  {
+    id: 1,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Системный блок игровой',
+    price: 150000,
+    description: 'Системный блок для мощных игр с RTX 4090 и i9-13900K.',
+  },
+  {
+    id: 2,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Игровой ноутбук ASUS ROG Strix',
+    price: 185000,
+    description: 'Ноутбук с экраном 240 Гц и видеокартой RTX 4080.',
+  },
+  {
+    id: 3,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Монитор Samsung Odyssey G9',
+    price: 95000,
+    description: 'Игровой монитор 49" с изогнутым экраном и разрешением 5120x1440.',
+  },
+  {
+    id: 4,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Клавиатура механическая Razer Huntsman',
+    price: 14500,
+    description: 'Оптико-механическая клавиатура с RGB подсветкой.',
+  },
+  {
+    id: 5,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Мышь беспроводная Logitech G Pro X',
+    price: 12500,
+    description: 'Легкая игровая мышь с герцовкой 25K и беспроводным подключением.',
+  },
+  {
+    id: 6,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Наушники SteelSeries Arctis Nova Pro',
+    price: 32000,
+    description: 'Беспроводные наушники с активным шумоподавлением и Hi-Res Audio.',
+  },
+  {
+    id: 7,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Игровое кресло Secretlab Titan Evo',
+    price: 65000,
+    description: 'Эргономичное кресло с магнитными подушками и регулировкой поясницы.',
+  },
+  {
+    id: 8,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Игровая консоль PlayStation 5',
+    price: 55000,
+    description: 'Консоль нового поколения с SSD и поддержкой 4K 120FPS.',
+  },
+  {
+    id: 9,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'VR шлем Meta Quest 3',
+    price: 68000,
+    description: 'Автономный шлем виртуальной реальности с цветными камерами.',
+  },
+  {
+    id: 10,
+    image: 'public/productsPhoto/ASUS ROG Strix PhotoCard.jpg',
+    name: 'Микрофон для стриминга Rode NT-USB',
+    price: 18500,
+    description: 'Студийный USB микрофон с поп-фильтром и держателем.',
+  }
+]
