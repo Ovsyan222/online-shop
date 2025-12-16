@@ -1,0 +1,72 @@
+export const products = [
+  {
+    id: 1,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Системный блок игровой',
+    description: 'Системный блок для мощных игр с RTX 4090 и i9-13900K.', 
+    price: 150000,
+  },
+  {
+    id: 2,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Игровой ноутбук ASUS ROG Strix',
+    description: 'Ноутбук с экраном 240 Гц и видеокартой RTX 4080.',
+    price: 185000,
+  },
+  {
+    id: 3,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Монитор Samsung Odyssey G9',
+    description: 'Игровой монитор 49" с изогнутым экраном и разрешением 5120x1440.',
+    price: 95000,
+  },
+  {
+    id: 4,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Клавиатура механическая Razer Huntsman',
+    description: 'Оптико-механическая клавиатура с RGB подсветкой.',
+    price: 14500,
+  },
+  {
+    id: 5,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Мышь беспроводная Logitech G Pro X',
+    description: 'Легкая игровая мышь с герцовкой 25K и беспроводным подключением.',
+    price: 12500,
+  },
+  {
+    id: 6,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Наушники SteelSeries Arctis Nova Pro',
+    description: 'Беспроводные наушники с активным шумоподавлением и Hi-Res Audio.',
+    price: 32000,
+  },
+  {
+    id: 7,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Игровое кресло Secretlab Titan Evo',
+    description: 'Эргономичное кресло с магнитными подушками и регулировкой поясницы.',
+    price: 65000,
+  },
+  {
+    id: 8,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Игровая консоль PlayStation 5',
+    description: 'Консоль нового поколения с SSD и поддержкой 4K 120FPS.',
+    price: 55000,
+  },
+  {
+    id: 9,
+    image: 'public/photoCard/nofoto.png',
+    name: 'VR шлем Meta Quest 3',
+    description: 'Автономный шлем виртуальной реальности с цветными камерами.',
+    price: 68000,
+  },
+  {
+    id: 10,
+    image: 'public/photoCard/nofoto.png',
+    name: 'Микрофон для стриминга Rode NT-USB',
+    description: 'Студийный USB микрофон с поп-фильтром и держателем.',
+    price: 18500,
+  }
+]
