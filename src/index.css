@@ -48,9 +48,8 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:active {
+  background: #cc6b47;
 }
 
 @media (prefers-color-scheme: light) {
@@ -64,4 +63,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.page-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.page-container p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
