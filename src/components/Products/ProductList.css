@@ -1,6 +1,8 @@
+/* Основные стили */
 .productListMain {
-    width: 100%;
     padding: 20px;
+    min-height: 100vh;
+    background: #fff;
     box-sizing: border-box;
 }
 
@@ -10,4 +12,239 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Карточка товара */
+.productCard {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: coral;
+}
+
+/* Элементы карточки */
+.productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+    flex-shrink: 0;
+}
+
+.productName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 15px;
+    line-height: 1.3;
+    min-height: 46px;
+}
+
+.productPrice {
+    font-size: 22px;
+    font-weight: 700;
+    color: coral;
+    margin: 0 0 15px;
+    flex-shrink: 0;
+}
+
+.productDescription {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.addToCartButton {
+    background: coral;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: auto;
+}
+
+.addToCartButton:hover {
+    background: #ff6b3d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 61, 0.3);
+}
+
+.addToCartButton:active {
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (min-width: 1440px) {
+    .productList {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+        gap: 35px;
+    }
+    
+    .productCard {
+        min-height: 480px;
+        padding: 24px;
+    }
+    
+    .productImage {
+        height: 220px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .productList {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1000px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .productList {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        gap: 20px;
+    }
+    
+    .productCard {
+        min-height: 430px;
+        padding: 18px;
+    }
+    
+    .productImage {
+        height: 180px;
+    }
+    
+    .productName {
+        font-size: 17px;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 650px) {
+    .productList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .productListMain {
+        padding: 15px;
+    }
+    
+    .productCard {
+        min-height: 380px;
+        padding: 14px;
+        border-radius: 16px;
+    }
+    
+    .productImage {
+        height: 150px;
+    }
+    
+    .productName {
+        font-size: 15px;
+        min-height: 40px;
+    }
+    
+    .productPrice {
+        font-size: 18px;
+    }
+    
+    .productDescription {
+        font-size: 13px;
+    }
+    
+    .addToCartButton {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productList {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 400px;
+    }
+    
+    .productListMain {
+        padding: 10px;
+    }
+    
+    .productCard {
+        min-height: 420px;
+        padding: 20px;
+    }
+    
+    .productImage {
+        height: 200px;
+    }
+    
+    .productName {
+        font-size: 18px;
+        min-height: auto;
+    }
+    
+    .productPrice {
+        font-size: 22px;
+    }
+    
+    .productDescription {
+        font-size: 14px;
+    }
+    
+    .addToCartButton {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Firefox fix */
+@supports (-moz-appearance: none) {
+    .productDescription {
+        display: block;
+        max-height: 63px;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных */
+@media (max-height: 500px) and (orientation: landscape) {
+    .productList {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .productImage {
+        height: 140px;
+    }
+    
+    .productCard {
+        min-height: 350px;
+        padding: 15px;
+    }
 }

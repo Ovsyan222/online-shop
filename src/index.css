@@ -99,3 +99,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.welcomeHello {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1a1a;
+  font-size: 2rem;
+}
